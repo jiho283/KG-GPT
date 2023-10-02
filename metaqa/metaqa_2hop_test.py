@@ -73,7 +73,7 @@ def retrieval_relation_parse_answer(answer):
     return components
 
 
-def get_answer(qid: int, claim: str, gt_entity: str, KG: dict, top_k: int, max_tokens: int):
+def get_answer(qid: int, claim: str, gt_entity: str, KG: dict, max_tokens: int):
     ans = {
         "answer_id": shortuuid.uuid(),
     }
@@ -141,9 +141,9 @@ def get_answer(qid: int, claim: str, gt_entity: str, KG: dict, top_k: int, max_t
                 start_relation.append(one_hop_relation_set)
                 continue
             else:
-                relation_retrieval_query = open_file('./meta_2hop_prompts/relation_retrieval_prompt.txt').replace('<<<<TOP_K>>>>', str(top_k)).replace('<<<<SENTENCE>>>>', divided_claim).replace('<<<<RELATION_SET>>>>', str(one_hop_relation_set))
+                relation_retrieval_query = open_file('./meta_2hop_prompts/relation_retrieval_prompt.txt').replace('<<<<SENTENCE>>>>', divided_claim).replace('<<<<RELATION_SET>>>>', str(one_hop_relation_set))
         else:
-            relation_retrieval_query = open_file('./meta_2hop_prompts/relation_retrieval_prompt.txt').replace('<<<<TOP_K>>>>', str(top_k)).replace('<<<<SENTENCE>>>>', divided_claim).replace('<<<<RELATION_SET>>>>', str(new_all_relation_set))
+            relation_retrieval_query = open_file('./meta_2hop_prompts/relation_retrieval_prompt.txt').replace('<<<<SENTENCE>>>>', divided_claim).replace('<<<<RELATION_SET>>>>', str(new_all_relation_set))
         
         for _ in range(5):
             try:
@@ -362,7 +362,7 @@ if __name__ == "__main__":
 
     for qid, question in questions_dict.items():
         try:                
-            future = get_answer(qid, question, entity_set_dict[qid][0], KG=metakg, top_k = 3, max_tokens=1024)
+            future = get_answer(qid, question, entity_set_dict[qid][0], KG=metakg, max_tokens=1024)
             futures.append(future)
             is_correct = 0
 
