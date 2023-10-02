@@ -1,0 +1,95 @@
+Please divide the given sentence into several sentences each of which can be represented by one triplet. The generated sentences should be numbered and formatted as follows: #(number). (sentence), (entity set). The entity set for each sentence should contain no more than two entities, with each entity being used only once in all statements. The '##' symbol should be used to indicate an entity set. In the generated sentences, there cannot be more than two entities in the entity set. (i.e., the number of ## must not be larger than two.)
+
+Examples) 
+Sentence A: Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+Entity set: ['Ahmad_Kadhim_Assad' ## "Al-Zawra'a_SC"] 
+--> Divided: 
+1. Ahmad Kadhim Assad's club is Al-Zawra'a SC., Entity set: ['Ahmad_Kadhim_Assad' ## "Al-Zawra'a_SC"] 
+
+
+Sentence B: Yeah! I know that Bananaman, which starred Tim Brooke-Taylor, first aired on 3rd October 1983!
+Entity set: ['"1983-10-03"' ## 'Tim_Brooke-Taylor' ## 'Bananaman'] 
+--> Divided: 
+1. Bananaman starred Tim Brooke-Taylor., Entity set: ['Bananaman' ## 'Tim_Brooke-Taylor'] 
+2. Bananaman first aired on 3rd October 1983., Entity set: ['Bananaman' ## '"1983-10-03"']
+
+
+Sentence C: AIDA Cruise line operated the ship which was built by Meyer Werft in Townsend, Poulshot, Wiltshire.
+Entity set: ['Meyer_Werft' ## 'AIDA_Cruises' ## '"Townsend, Poulshot, Wiltshire"']
+--> Divided: 
+1. AIDA Cruise line operated the ship., Entity set: ['AIDA_Cruises' ## 'ship'] 
+2. The ship was built by Meyer Werft., Entity set: ['ship' ## 'Meyer_Werft']
+3. Meyer Werft is located in Townsend, Poulshot, Wiltshire., Entity set: ['Meyer_Werft' ## '"Townsend, Poulshot, Wiltshire"']
+
+
+Sentence D: Really? Jamie Lawrence is the music composer of the 83 minute 'Death on a Factory Farm' film, directed by Sarah Teale!
+Entity set: ['Jamie_Lawrence' ## '"83.0"' ## 'Death_on_a_Factory_Farm' ## 'Sarah_Teale'] 
+--> Divided: 
+1. Jamie Lawrence is the music composer of 'Death on a Factory Farm' film., Entity set: ['Jamie_Lawrence' ## 'Death_on_a_Factory_Farm'] 
+2. 'Death on a Factory Farm' film is directed by Sarah Teale., Entity set: ['Death_on_a_Factory_Farm' ## 'Sarah_Teale']
+3. 'Death on a Factory Farm' is 83 minute film., Entity set: ['Death_on_a_Factory_Farm' ## '"83.0"']
+
+
+Sentence E: Brandon Carter was born in England and graduated from the University of Cambridge where the current Chancellor is Leszek Borysiewicz.
+Entity set: ['Brandon_Carter' ## 'University_of_Cambridge' ## 'Leszek_Borysiewicz' ## 'England'] 
+--> Divided: 
+1. Brandon Carter was born in England., Entity set: ['Brandon_Carter' ## 'England'] 
+2. Brandon Carter graduated from the University of Cambridge., Entity set: ['Brandon_Carter' ## 'University_of_Cambridge']
+3. The current Chancellor of University of Cambridge is Leszek Borysiewicz., Entity set: ['University_of_Cambridge' ## 'Leszek_Borysiewicz']
+
+
+Sentence F: No, but the leader of the United States is not Olena Serdiuk.
+Entity set: ['United_States' ## '"Olena Serdiuk"'] 
+--> Divided: 
+1. The leader of the United States is not Olena Serdiuk., Entity set: ['United_States' ## '"Olena Serdiuk"'] 
+
+
+Sentence G: Yes, with a floor count of 45, 200 Public Square is located in Cleveland in the United States.
+Entity set: ['200_Public_Square' ## 'Cleveland' ## 'United_States' ## '"45"']
+--> Divided:
+1. 200 Public Square is with a floor count of 45., Entity set: ['200_Public_Square' ## '"45"']
+2. 200 Public Square is located in Cleveland., Entity set: ['200_Public_Square' ## 'Cleveland']
+3. Cleveland is in the United States., Entity set: ['Cleveland' ## 'United_States']
+
+
+Sentence H: Bananaman the TV series starred by a person was shown on the company and the company headquarters is called Broadcasting House.
+Entity set: ['Broadcasting_House' ## 'Bananaman'] 
+--> Divided: 
+1. Bananaman the TV series starred by a person., Entity set: ['Bananaman' ## 'person'] 
+2. Bananaman the TV series was shown on the company., Entity set: ['Bananaman' ## 'company']
+3. The company headquarters is called Broadcasting House., Entity set: ['company' ## 'Broadcasting_House']
+
+
+Sentence I: Do you know Milan Hodža? he had a religion.
+Entity set: ['Milan_Hodža'] 
+--> Divided: 
+1. Milan Hodža had a religion., Entity set: ['Milan_Hodža'] 
+
+
+Sentence J: The place, designed by Huseyin Butuner and Hilmi Guner, is located in a country, where the leader is Artur Rasizade.
+Entity set: ['"Hüseyin Bütüner and Hilmi Güner"' ## 'Artur_Rasizade'] 
+--> Divided: 
+1. The place was designed by Huseyin Butuner and Hilmi Guner., Entity set: ['place' ## '"Hüseyin Bütüner and Hilmi Güner"'] 
+2. The place is located in a country., Entity set: ['place' ## 'country']
+3. The leader of a country is Artur Rasizade., Entity set: ['country' ## 'Artur_Rasizade']
+
+
+Sentence K: An academic journal with code IJPHDE is also Acta Math. Hungar.
+Entity set: ['"Acta Math. Hungar."' ## '"IJPHDE"']
+--> Divided: 
+1. An academic journal is with code IJPHDE., Entity set: ['academic journal' ## '"IJPHDE"']
+2. An academic journal is also Acta Math. Hungar., Entity set: ['academic journal' ## '"Acta Math. Hungar."']
+
+
+Sentence L: 'A film' was produced by Anatole de Grunwald, directed by Harold French, with cinematography done by Bernard Knowles.
+Entity set: ['Anatole_de_Grunwald' ## 'Bernard_Knowles' ## 'Harold_French'] 
+--> Divided: 
+1. 'A film' was produced by Anatole de Grunwald., Entity set: ['film' ## 'Anatole_de_Grunwald'] 
+2. 'A film' was directed by Harold French., Entity set: ['film' ## ''Harold_French']
+3. 'A film' was with cinematography done by Bernard Knowles., Entity set: ['film' ## 'Bernard_Knowles']
+
+
+Your Task)
+Sentence:  <<<<CLAIM>>>>
+Entity set: <<<<ENTITY_SET>>>>
+--> Divided:

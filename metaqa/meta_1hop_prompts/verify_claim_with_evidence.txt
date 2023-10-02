@@ -1,0 +1,70 @@
+Answer the questions based on evidence.
+Each evidence is in the form of [head, relation, tail] and it means "head's relation is tail.".
+If you think a question can have multiple answers, you must choose one and answer it.
+
+Examples)
+
+Claim A: what words describe [Coming Home]?
+Evidence set: [['Coming Home', 'has_genre', 'Drama'], ['Coming Home', 'has_genre', 'War'], ['Coming Home', 'has_tags', 'vietnam'], ['Coming Home', 'has_tags', 'hal ashby']]
+Answer: 'hal ashby'
+
+
+Claim B: what films does [Faye Wong] appear in?
+Evidence set: [['Chungking Express', 'starred_actors', 'Faye Wong'], ['Chinese Odyssey 2002', 'starred_actors', 'Faye Wong']]
+Answer: 'Chungking Express'
+
+
+Claim C: what films are about [haneke]?
+Evidence set: [['Code Unknown', 'has_tag', 'haneke'], ['The Piano Teacher', 'has_tag', 'haneke'], ['Funny Games', 'has_tag', 'haneke'], ['Time of the Wolf', 'has_tag', 'haneke']] 
+Answer: 'The Piano Teacher'
+
+
+Claim D: who acted in the movie [Inescapable]?
+Evidence set: [['Inescapable', 'directed_by', 'Ruba Nadda'], ['Inescapable', 'written_by', 'Ruba Nadda'], ['Inescapable', 'starred_actors', 'Marisa Tomei'], ['Inescapable', 'starred_actors', 'Joshua Jackson'], ['Inescapable', 'starred_actors', 'Alexander Siddig']] 
+Answer: 'Marisa Tomei'
+
+
+Claim E: can you name a film directed by [William Cameron Menzies]?
+Evidence set: [['Things to Come', 'directed_by', 'William Cameron Menzies']]
+Answer: 'Things to Come'
+
+
+Claim F: what sort of movie is [Witness for the Prosecution]?
+Evidence set: [['Witness for the Prosecution', 'has_tags', 'bd-r'], ['Witness for the Prosecution', 'has_genre', 'Drama'], ['Witness for the Prosecution', 'has_tags', 'courtroom']]
+Answer: 'Drama'
+
+
+Claim G: what type of film is [The Mouse That Roared]?
+Evidence set: [['The Mouse That Roared', 'has_genre', 'Comedy'], ['The Mouse That Roared', 'has_tags', 'satirical'], ['The Mouse That Roared', 'has_tags', 'peter sellers']]  
+Answer: 'Comedy'
+
+
+Claim H: what is the primary language in the film [Blackboards]?
+Evidence set: [['Blackboards', 'in_language', 'Kurdish'], ['Blackboards', 'has_genre', 'War'], ['Blackboards', 'has_tags', 'samira makhmalbaf']] 
+Answer: 'Kurdish'
+
+
+Claim I: who is the creator of the film script for [The Truth of Lie]?
+Evidence set: [['The Truth of Lie', 'written_by', 'Roland Reber'], ['The Truth of Lie', 'directed_by', 'Roland Reber'], ['The Truth of Lie, 'has_genre', 'Thriller']] 
+Answer: 'Roland Reber'
+
+
+Claim J: what was the release year of the film [The Return of Doctor X]?
+Evidence set: [['The Return of Doctor X', 'written_by', 'William J. Makin'], ['The Return of Doctor X', 'release_year', '1939'], ['The Return of Doctor X', 'has_tags', 'humphrey bogart']] 
+Answer: '1939'
+
+
+Claim K: which topics is movie [Topper] about?
+Evidence set: [['Topper', 'has_tags', 'ghosts'], ['Topper', 'has_tags', 'norman z. mcleod'], ['Topper', 'has_genre', 'Comedy']] 
+Answer: 'ghosts'
+
+
+Claim L: describe the movie [The Mouse on the Moon] in a few words?
+Evidence set: [['The Mouse on the Moon', 'has_tags', 'bd-r'], ['The Mouse on the Moon', 'has_genre', 'Comedy'], ['The Mouse on the Moon', 'written_by', 'Leonard Wibberley']] 
+Answer: 'bd-r'
+
+
+Now let's verify the Claim based on the Evidence set. Please do not say there is no evdience, you must say the most related one entity from the evidence set.
+Claim: <<<<CLAIM>>>>
+Evidence set: <<<<EVIDENCE_SET>>>>
+Answer: 

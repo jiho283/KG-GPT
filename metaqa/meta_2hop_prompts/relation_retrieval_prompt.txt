@@ -1,0 +1,68 @@
+I will give you a set of words. 
+Find the elements from Words set which are most semantically related to the given Sentence. You can choose the one that is most similar, or you can choose less than three elements if it is ambiguous.
+
+Examples)
+Sentence A: which person wrote the films
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['written_by']
+
+
+Sentence B: which directors co-directed movies with
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['directed_by'] 
+
+
+Sentence C: the movies directed by [Kresten Vestbjerg Andersen]
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['directed_by']
+
+
+Sentence D: the movies were in which genres
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'release_year']
+Answer: ['has_genre']
+
+
+Sentence E: the films were released in which years
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['release_year']
+
+
+Sentence F: the scriptwriter of [First Monday in October]
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'has_tags', 'release_year']
+Answer: ['written_by']
+
+
+Sentence G: what are the languages spoken in the films
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'in_language']
+Answer: ['in_language']
+
+
+Sentence H: [Oliver Cooper] acted films
+Words set: ['has_genre', 'directed_by', 'starred_actors', 'has_tags', 'in_language', 'release_year']
+Answer: ['starred_actors']
+
+
+Sentence I: who co-starred with
+Words set: ['has_genre', 'directed_by', 'written_by', 'in_language', 'starred_actors']
+Answer: ['starred_actors']
+
+
+Sentence J: what types are the films
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'has_tags', 'release_year']
+Answer: ['written_by']
+
+
+Sentence K: when were the movies released
+Words set: ['starred_actors', 'directed_by', 'written_by', 'has_tags', 'in_language', 'release_year']
+Answer: ['release_year']
+
+
+Sentence L: which movies share the screenwrite
+Words set: ['starred_actors', 'directed_by', 'written_by', 'has_tags', 'has_genre', 'in_language', 'release_year']
+Answer: ['written_by']
+
+
+Now let's find the elements.
+Sentence: <<<<SENTENCE>>>>
+Words set: <<<<RELATION_SET>>>>
+Answer: 

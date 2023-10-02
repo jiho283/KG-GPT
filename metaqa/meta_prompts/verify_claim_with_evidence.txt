@@ -1,0 +1,53 @@
+You should verify the claim based on the evidence set.
+Each evidence is in the form of [head, relation, tail] and it means "head's relation is tail.".
+
+Verify the claim based on the evidence set. (True means that everything contained in the claim is supported by the evidence.)
+Please note that the unit is not important. (e.g. "98400" is also same as 98.4kg)
+Choose one of {True, False}, and give me the one-sentence evidence.
+
+Examples)
+
+Claim A: Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+Evidence set: [['Ahamad_Kadhim', 'clubs', "Al-Zawra'a SC"]]
+Answer: True, based on the evidence set, Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+
+
+Claim B: Yeah! I know that a TV show, which starred Tim Brooke-Taylor, first aired on 3rd October 1983!
+Evidence set: [['Bananaman', 'firstAired', '"1983-10-03"'], ['Bananaman', 'starring', 'Tim_Brooke-Taylor']]
+Answer: True, the claim is supported by the evidence since Bananaman refers to the TV show.
+
+
+Claim C: Jamie Lawrence is the music composer of the 83 minute 'Death on a Factory Farm' film, directed by Sarah Teale.
+Evidence set: [['Jamie_Lawrence', 'composer', 'Death_on_a_Factory_Farm'], ['Death_on_a_Factory_Farm', 'director', 'Sarah_Teale']] 
+Answer: False, there is no evidence for the 83 minute length.
+
+
+Claim D: Do you know Milan Hodža? he had a religion.
+Evidence set: [[]] 
+Answer: False, there is no evidence that Milan had a religion.
+
+
+Claim E: Ahmad Kadhim Assad's club is not Al-Zawra'a SC.
+Evidence set: [[]]
+Answer: True, based on the evidence set, there is no information that Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+
+
+Claim F: Jamie Lawrence is not the music composer the 'Death on a Factory Farm' film, directed by Sarah Teale.
+Evidence set: [['Death_on_a_Factory_Farm', 'director', 'Sarah_Teale']]
+Answer: True, 'Death on a Factory Farm' film is directed by Sarah Teale and there is no information that Jamie Lawrence is the composer of 'Death on a Factory Farm'.
+
+
+Claim G: Milan Hodža had a religion.
+Evidence set: [['Milan_Hodža', 'religion', 'Christianity'], ['Milan_Hodža', 'birthPlace', 'Sučany'], ['Milan_Hodža', 'successor', 'Edvard_Beneš']]  
+Answer: True, he is a christian.
+
+
+Claim H: With a floor count of 45, 200 Public Square is located in Cleveland in the United States.
+Evidence set: [['200_Public_Square', 'location', 'Cleveland'], ['200_Public_Square', 'floorCount', '"45"'], ['Cleveland', 'country', 'United_States']] 
+Answer: True, everything of the claim is supported by the evidence set.
+
+
+Now let's verify the Claim based on the Evidence set.
+Claim: <<<<CLAIM>>>>
+Evidence set: <<<<EVIDENCE_SET>>>>
+Answer: 

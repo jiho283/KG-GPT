@@ -1,0 +1,68 @@
+I will give you a set of words. 
+Find the elements from Words set which are most semantically related to the given Sentence. You can choose the one that is most similar, or you can choose less than three elements if it is ambiguous.
+
+Examples)
+Sentence A: what words describe [Coming Home]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['has_tags']
+
+
+Sentence B: what films does [Faye Wong] appear in?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['starred_actors'] 
+
+
+Sentence C: what films are about [haneke]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['has_tags']
+
+
+Sentence D: who acted in the movie [Inescapable]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'release_year']
+Answer: ['starred_actors']
+
+
+Sentence E: can you name a film directed by [William Cameron Menzies]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['directed_by']
+
+
+Sentence F: what sort of movie is [Witness for the Prosecution]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'has_tags', 'release_year']
+Answer: ['has_genre']
+
+
+Sentence G: what type of film is [The Mouse That Roared]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by']
+Answer: ['has_genre']
+
+
+Sentence H: what is the primary language in the film [Blackboards]?
+Words set: ['has_genre', 'directed_by', 'written_by', 'has_tags', 'in_language', 'release_year']
+Answer: ['in_language']
+
+
+Sentence I: who is the creator of the film script for [The Truth of Lie]?
+Words set: ['has_genre', 'directed_by', 'written_by', 'in_language']
+Answer: ['written_by']
+
+
+Sentence J: what was the release year of the film [The Return of Doctor X]?
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'has_tags', 'release_year']
+Answer: ['release_year']
+
+
+Sentence K: which topics is movie [Topper] about?
+Words set: ['starred_actors', 'directed_by', 'written_by', 'has_tags', 'in_language', 'release_year']
+Answer: ['has_tags']
+
+
+Sentence L: describe the movie [The Mouse on the Moon] in a few words?
+Words set: ['starred_actors', 'directed_by', 'written_by', 'has_tags', 'has_genre', 'in_language', 'release_year']
+Answer: ['has_tags']
+
+
+Now let's find the elements.
+Sentence: <<<<SENTENCE>>>>
+Words set: <<<<RELATION_SET>>>>
+Answer: 

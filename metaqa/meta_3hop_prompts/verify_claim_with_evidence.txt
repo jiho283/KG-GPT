@@ -1,0 +1,70 @@
+Answer the questions based on evidence.
+Each evidence is in the form of [head, relation, tail] and it means "head's relation is tail.".
+If you think a question can have multiple answers, you must choose one and answer it.
+
+Examples)
+
+Claim A: who are the writers that the directors of their films also directed [Agatha]?
+Evidence set: [['Agatha', 'written_by', 'Kathleen Tynan'], ['Agatha', 'directed_by', 'Michael Apted'], ['Gorky Park', 'written_by', 'Dennis Potter'], ['Gorky Park', 'directed_by', 'Michael Apted']]
+Answer: 'Dennis Potter'
+
+
+Claim B: when did the movies starred by [The Night Porter] actors release?
+Evidence set: ['The Night Porter', 'release_year', '1974'], ['The Night Porter', 'starred_actors', 'Charlotte Rampling'], ['The Mill and the Cross', 'starred_actors', 'Charlotte Rampling'], ['The Mill and the Cross', 'release_year', '2011'], ['The Night Porter', 'starred_actors', 'Dirk Bogarde'], ['Despair', 'starred_actors', 'Dirk Bogarde']]
+Answer: '2011'
+
+
+Claim C: what types are the movies directed by the director of [Oklahoma Crude]?
+Evidence set: [['The Defiant Ones', 'directed_by', 'Stanley Kramer'], ['Not as a Stranger', 'directed_by', 'Stanley Kramer'], ['Not as a Stranger', 'has_genre', 'Drama'], ['Oklahoma Crude', 'directed_by', 'Stanley Kramer']] 
+Answer: 'Drama'
+
+
+Claim D: the films written by the screenwriter of [To Catch a Thief] were directed by who?
+Evidence set: [['To Catch a Thief', 'written_by', 'John Michael Hayes'], ['To Catch a Thief', 'directed_by', 'Alfred Hitchcock'], ['Torch Song', 'written_by', 'John Michael Hayes'], ['Rear Window', 'written_by', 'John Michael Hayes'], ['To Catch a Thief', 'written_by', 'David Dodge'], ['Torch Song', 'directed_by', 'Charles Walters']] 
+Answer: 'Charles Walters'
+
+
+Claim E: what are the languages spoken in the movies written by [The Beekeeper] writers?
+Evidence set: [['The Beekeeper', 'written_by', 'Theodoros Angelopoulos'], ['The Dust of Time', 'in_language', 'Greek'], ['The Dust of Time', 'written_by', 'Theodoros Angelopoulos'], ['The Dust of Time', 'release_year', '2008']]
+Answer: 'Greek'
+
+
+Claim F: what genres do the movies that share actors with [Man of Steel] fall under?
+Evidence set: [['Man of Steel', 'starred_actors', 'Amy Adams'], ['Moonlight Serenade', 'starred_actors', 'Amy Adams'], ['Moonlight Serenade', 'has_genre', 'Romance'], ['Man of Steel', 'starred_actors', 'Michael Shannon']]
+Answer: 'Romance'
+
+
+Claim G: the films written by the writer of [French Kiss] starred who?
+Evidence set: [['French Kiss', 'written_by', 'Adam Brooks'], ['French Kiss', 'starred_actors', 'Kevin Kline'], ['The Invisible Circus', 'written_by', 'Adam Brooks'], ['The Invisible Circus', 'starred_actors', 'Cameron Diaz'], ['French Kiss', 'starred_actors', 'Meg Ryan']]  
+Answer: 'Cameron Diaz'
+
+
+Claim H: who directed movies for the writer of [King Kelly]?
+Evidence set: [['King Kelly', 'written_by', 'Andrew Neel'], ['Darkon', 'directed_by', 'Andrew Neel'], ['Darkon', 'directed_by', 'Luke Meyer']] 
+Answer: 'Luke Meyer'
+
+
+Claim I: what are the languages spoken in the films whose actors also appear in [Pascali's Island]?
+Evidence set: [["Pascali's Island", 'starred_actors', 'Ben Kingsley'], ['Bugsy', 'starred_actors', 'Ben Kingsley'], ['The Confession', 'starred_actors', 'Ben Kingsley'], ['The Confession', 'in_language', 'French']] 
+Answer: 'French'
+
+
+Claim J: the films that share actors with the film [Santa Who?] were released in which years?
+Evidence set: [['Santa Who?', 'starred_actors', 'Leslie Nielsen'], ['Santa Who?', 'release_year', '2000'], ['Santa Who?', 'directed_by', 'William Dear'], ['Prom Night', 'starred_actors', 'Leslie Nielsen'], ['Prom Night', 'release_year', '2008']] 
+Answer: '2008'
+
+
+Claim K: what were the release dates of movies starred by actors in [Charlie Chan at Monte Carlo]?
+Evidence set: [['Charlie Chan at Monte Carlo', 'starred_actors', 'Keye Luke'], ['The Feathered Serpent', 'starred_actors', 'Keye Luke'], ['The Feathered Serpent', 'release_year', '1948'], ['Charlie Chan at Monte Carlo', 'release_year', '1937']] 
+Answer: '1948'
+
+
+Claim L: who is listed as screenwriter of the films directed by the [Blue Collar] director?
+Evidence set: [['Blue Collar', 'directed_by', 'Paul Schrader'], ['Cat People', 'directed_by', 'Paul Schrader'], ['Cat People', 'written_by', 'Alan Ormsby'], ['Blue Collar', 'written_by', 'Paul Schrader']] 
+Answer: 'Alan Ormsby'
+
+
+Now let's verify the Claim based on the Evidence set. Please do not say there is no evdience, you must say the most related one entity from the evidence set.
+Claim: <<<<CLAIM>>>>
+Evidence set: <<<<EVIDENCE_SET>>>>
+Answer: 

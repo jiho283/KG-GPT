@@ -1,0 +1,68 @@
+I will give you a set of words. 
+Find the elements from Words set which are most semantically related to the given Sentence. You can choose the one that is most similar, or you can choose less than three elements if it is ambiguous.
+
+Examples)
+Sentence A: their films also directed [Agatha]
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['directed_by']
+
+
+Sentence B: when did the movies release
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['release_year'] 
+
+
+Sentence C: what types are the movies
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['has_genre']
+
+
+Sentence D: were directed by who
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'release_year']
+Answer: ['directed_by']
+
+
+Sentence E: what are the languages spoken in the movies
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'has_imdb_rating', 'written_by', 'has_tags', 'has_imdb_votes', 'in_language', 'release_year']
+Answer: ['in_language']
+
+
+Sentence F: the movies that share actors with
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'has_tags', 'release_year']
+Answer: ['starred_actors']
+
+
+Sentence G: the writer of [French Kiss]
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by']
+Answer: ['written_by']
+
+
+Sentence H: movies for the writer
+Words set: ['has_genre', 'directed_by', 'written_by', 'has_tags', 'in_language', 'release_year']
+Answer: ['written_by']
+
+
+Sentence I: what are the languages spoken in the film
+Words set: ['has_genre', 'directed_by', 'written_by', 'in_language']
+Answer: ['in_language']
+
+
+Sentence J: the films that share actors
+Words set: ['has_genre', 'starred_actors', 'directed_by', 'written_by', 'has_tags', 'release_year']
+Answer: ['starred_actors']
+
+
+Sentence K: what were the release dates of movies
+Words set: ['starred_actors', 'directed_by', 'written_by', 'has_tags', 'in_language', 'release_year']
+Answer: ['release_year']
+
+
+Sentence L: who is listed as screenwriter of the films
+Words set: ['starred_actors', 'directed_by', 'written_by', 'has_tags', 'has_genre', 'in_language', 'release_year']
+Answer: ['written_by']
+
+
+Now let's find the elements.
+Sentence: <<<<SENTENCE>>>>
+Words set: <<<<RELATION_SET>>>>
+Answer: 

@@ -1,0 +1,91 @@
+Please divide the given sentence into several sentences each of which can be represented by one triplet. The generated sentences should be numbered and formatted as follows: #(number). (sentence), (entity set). 
+
+Examples)
+Sentence A: which person wrote the films directed by [Yuriy Norshteyn]?
+Entity set: ['Yuriy Norshteyn']
+--> Divided:
+1. the films directed by [Yuriy Norshteyn], Entity set: ['Yuriy Norshteyn']
+2. which person wrote the films, Entity set: []
+
+
+Sentence B: which directors co-directed movies with [Ridley Scott]?
+Entity set: ['Ridley Scott']
+--> Divided:
+1. which directors co-directed movies with [Ridley Scott], Entity set: ['Ridley Scott']
+2. which directors co-directed movies with, Entity set: []
+
+
+Sentence C: who are the writers of the movies directed by [Kresten Vestbjerg Andersen]?
+Entity set: ['Kresten Vestbjerg Andersen']
+--> Divided: 
+1. the movies directed by [Kresten Vestbjerg Andersen], Entity set: ['Kresten Vestbjerg Andersen']
+2. who are the writers of the movies, Entity set: []
+
+
+Sentence D: the movies directed by [David Atkins] were in which genres?
+Entity set: ['David Atkins']
+--> Divided:
+1. the movies directed by [David Atkins], Entity set: ['David Atkins']
+2. the movies were in which genres, Entity set: []
+
+
+Sentence E: the films written by [Scott Lobdell] were released in which years?
+Entity set: ['Scott Lobdell']
+--> Divided:
+1. the films written by [Scott Lobdell], Entity set: ['Scott Lobdell']
+2. the films were released in which years, Entity set: []
+
+
+Sentence F: the scriptwriter of [First Monday in October] also wrote movies?
+Entity set: ['First Monday in October']
+--> Divided:
+1. the scriptwriter of [First Monday in October] also wrote movies, Entity set: ['First Monday in October']
+2. also wrote movies, Entity set: []
+
+
+Sentence G: what are the languages spoken in the films starred by [Terence Hill]?
+Entity set: ['Terence Hill']
+--> Divided:
+1. the films starred by [Terence Hill], Entity set: ['Terence Hill']
+2. what are the languages spoken in the films, Entity set: []
+
+
+Sentence H: who is listed as director of [Oliver Cooper] acted films?
+Entity set: ['Oliver Cooper'] 
+--> Divided: 
+1. [Oliver Cooper] acted films, Entity set: ['Oliver Cooper'] 
+2. who is listed as director of, Entity set: [] 
+
+
+Sentence I: who co-starred with [Stephen Furst]?
+Entity set: ['Stephen Furst'] 
+--> Divided: 
+1. co-starred with [Stephen Furst], Entity set: ['Stephen Furst'] 
+2. who co-starred, Entity set: [] 
+
+
+Sentence J: what types are the films written by [Polaris Banks]?
+Entity set: ['Polaris Banks'] 
+--> Divided: 
+1. the films written by [Polaris Banks], Entity set: ['Polaris Banks'] 
+2. what types are the films, Entity set: [] 
+
+
+Sentence K: when were the movies written by [Phillip Borsos] released?
+Entity set: ['Phillip Borsos'] 
+--> Divided: 
+1. the movies written by [Phillip Borsos], Entity set: ['Phillip Borsos'] 
+2. when were the movies released, Entity set: [] 
+
+
+Sentence L: which movies share the screenwriter with [Jesus Henry Christ]?
+Entity set: ['Jesus Henry Christ'] 
+--> Divided: 
+1. screenwriter with [Jesus Henry Christ], Entity set: ['Jesus Henry Christ'] 
+2. which movies share the screenwriter, Entity set: [] 
+
+
+Your Task)
+Sentence:  <<<<CLAIM>>>>
+Entity set: <<<<ENTITY_SET>>>>
+--> Divided:

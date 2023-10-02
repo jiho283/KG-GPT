@@ -1,0 +1,3 @@
+Verify the claim. Is this claim True? or False?
+Claim: <<<<CLAIM>>>>
+Choose one of {True, False}, and give me the one-sentence evidence.

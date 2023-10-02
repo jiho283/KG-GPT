@@ -1,0 +1,70 @@
+Answer the questions based on evidence.
+Each evidence is in the form of [head, relation, tail] and it means "head's relation is tail.".
+If you think a question can have multiple answers, you must choose one and answer it.
+
+Examples)
+
+Claim A: which person wrote the films directed by [Yuriy Norshteyn]?
+Evidence set: [['Tale of Tales', 'directed_by', 'Yuriy Norshteyn'], ['Tale of Tales', 'written_by', 'Yuriy Norshteyn'], ['Hedgehog in the Fog', 'written_by', 'Sergei Kozlov'], ['Hedgehog in the Fog', 'directed_by', 'Yuriy Norshteyn']]
+Answer: 'Sergei Kozlov'
+
+
+Claim B: who are the writers of the movies directed by [Kresten Vestbjerg Andersen]?
+Evidence set: [['Ronal the Barbarian', 'written_by', 'Philip Einstein Lipski'], ['Ronal the Barbarian', 'directed_by', 'Kresten Vestbjerg Andersen'], ['Ronal the Barbarian', 'written_by', 'Kresten Vestbjerg Andersen'], ['Ronal the Barbarian', 'written_by', 'Thorbjørn Christoffersen']] 
+Answer: 'Philip Einstein Lipski'
+
+
+Claim C: the movies directed by [David Atkins] were in which genres?
+Evidence set: [['Novocaine', 'has_genre', 'Comedy'], ['Novocaine', 'written_by', 'David Atkins'], ['Novocaine', 'directed_by', 'David Atkins']] 
+Answer: 'Comedy'
+
+
+Claim D: the films written by [Scott Lobdell] were released in which years?
+Evidence set: [['Man of the House', 'release_year', '2005'], ['Man of the House', 'written_by', 'Scott Lobdell'], ['Man of the House', 'release_year', '1995'], ['Man of the House', 'has_genre', 'Comedy']]
+Answer: '1995'
+
+
+Claim E: what are the languages spoken in the films starred by [Terence Hill]?
+Evidence set: [['Terence Hill', 'starred_actors', 'They Call Me Trinity'], ['Terence Hill', 'starred_actors', 'They Call Me Renegade'], ['Terence Hill', 'starred_actors', 'Go for It'], ['They Call Me Renegade', 'in_language', 'Italian']]  
+Answer: 'Italian'
+
+
+Claim F: who is listed as director of [Oliver Cooper] acted films?
+Evidence set: [['Project X', 'directed_by', 'Jonathan Kaplan'], ['Project X', 'starred_actors', 'Jonathan Daniel Brown'], ['Project X', 'starred_actors', 'Oliver Cooper'], ['Project X', 'directed_by', 'Nima Nourizadeh'], ['Project X', 'written_by', 'Matt Drake']] 
+Answer: 'Nima Nourizadeh'
+
+
+Claim G: who co-starred with [Stephen Furst]?
+Evidence set: [['The Dream Team', 'starred_actors', 'Michael Keaton'], ['The Dream Team', 'starred_actors', 'Peter Boyle'], ['The Dream Team', 'starred_actors', 'Christopher Lloyd'], ['The Dream Team', 'directed_by', 'Howard Zieff'], ['The Dream Team', 'written_by', 'David Loucka'], ['The Dream Team', 'starred_actors', 'Stephen Furst']] 
+Answer: 'Peter Boyle'
+
+
+Claim H: what types are the films written by [Polaris Banks]?
+Evidence set: [['Casey Jones', 'written_by', 'Polaris Banks'], ['Casey Jones', 'directed_by', 'Polaris Banks'], ['Casey Jones', 'has_genre', 'Short'], ['Casey Jones', 'release_year', '2011']] 
+Answer: 'Short'
+
+
+Claim I: when were the movies written by [Phillip Borsos] released?
+Evidence set: [['The Grey Fox', 'directed_by', 'Phillip Borsos'], ['The Grey Fox', 'release_year', '1982'], ['One Magic Christmas', 'written_by', 'Phillip Borsos'], ['One Magic Christmas', 'release_year', '1985']] 
+Answer: '1985'
+
+
+Claim J: which movies share the screenwriter with [Jesus Henry Christ]?
+Evidence set: [['Jesus Henry Christ', 'directed_by', 'Dennis Lee'], ['Jesus Henry Christ', 'has_genre', 'Comedy'], ['Jesus Henry Christ', 'written_by', 'Dennis Lee'], ['Fireflies in the Garden', 'written_by', 'Dennis Lee']] 
+Answer: 'Fireflies in the Garden'
+
+
+Claim K: which directors co-directed movies with [Ridley Scott]?
+Evidence set: [['The Counselor', 'directed_by', 'Ridley Scott'], ['Legend', 'directed_by', 'Ridley Scott'], ['Body of Lies', 'directed_by', 'Ridley Scott'], ['Blade Runner', 'directed_by', 'Ridley Scott'], ['Someone to Watch Over Me', 'directed_by', 'Ridley Scott'], ['Gladiator', 'directed_by', 'Ridley Scott'], ['Black Hawk Down', 'directed_by', 'Ridley Scott'], ['Black Rain', 'directed_by', 'Ridley Scott'], ['Robin Hood', 'directed_by', 'Ridley Scott'], ['Gladiator', 'directed_by', 'Rowdy Herrington']]
+Answer: 'Rowdy Herrington'
+
+
+Claim L: the scriptwriter of [First Monday in October] also wrote movies?
+Evidence set: [['First Monday in October', 'written_by', 'Robert E. Lee'], ['First Monday in October', 'written_by', 'Jerome Lawrence'], ['Inherit the Wind', 'written_by', 'Jerome Lawrence']]
+Answer: 'Inherit the Wind'
+
+
+Now let's verify the Claim based on the Evidence set. Please do not say there is no evdience, you must say the most related one entity from the evidence set.
+Claim: <<<<CLAIM>>>>
+Evidence set: <<<<EVIDENCE_SET>>>>
+Answer: 

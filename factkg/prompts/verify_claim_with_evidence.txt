@@ -1,0 +1,73 @@
+You should verify the claim based on the evidence set.
+Each evidence is in the form of [head, relation, tail] and it means "head's relation is tail.".
+
+Verify the claim based on the evidence set. (True means that everything contained in the claim is supported by the evidence.)
+Please note that the unit is not important. (e.g. "98400" is also same as 98.4kg)
+Choose one of {True, False}, and give me the one-sentence evidence.
+
+Examples)
+
+Claim A: Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+Evidence set: [['Ahamad_Kadhim', 'clubs', "Al-Zawra'a SC"]]
+Answer: True, based on the evidence set, Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+
+
+Claim B: Yeah! I know that a TV show, which starred Tim Brooke-Taylor, first aired on 3rd October 1983!
+Evidence set: [['Bananaman', 'firstAired', '"1983-10-03"'], ['Bananaman', 'starring', 'Tim_Brooke-Taylor']]
+Answer: True, the claim is supported by the evidence since Bananaman refers to the TV show.
+
+
+Claim C: Really? Jamie Lawrence is the music composer of the 83 minute 'Death on a Factory Farm' film, directed by Sarah Teale!
+Evidence set: [['Jamie_Lawrence', 'composer', 'Death_on_a_Factory_Farm'], ['Death_on_a_Factory_Farm', 'director', 'Sarah_Teale']] 
+Answer: False, there is no evidence for the 83 minute length.
+
+
+Claim D: Do you know Milan Hodža? he had a religion.
+Evidence set: [[]] 
+Answer: False, there is no evidence that Milan had a religion.
+
+
+Claim E: No, but the leader of the United States is not Olena Serdiuk.
+Evidence set: [[]]
+Answer: True, based on the evidence set, there is no information that the leader of the United States is Olena Serdiuk.
+
+
+Claim F: Brandon Carter was born in England and graduated from the University of Cambridge where the current Chancellor is Leszek Borysiewicz.
+Evidence set: [['Brandon_Carter', 'almaMater', 'University_of_Cambridge'], ['Brandon_Carter', 'birthPlace', 'England'], ['University_of_Cambridge', 'viceChancellor', 'Leszek_Borysiewicz']]
+Answer: True, everything of the claim is supported by the evidence set.
+
+
+Claim G: 'A film' was produced by Anatole de Grunwald, directed by Harold French, with cinematography done by Bernard Knowles.
+Evidence set: [['Unpublished_Story', 'director', 'Harold_French'], ['Unpublished_Story', 'cinematography', 'Bernard_Knowles']]
+Answer: False, there is no information about the producer of 'Unpublished_Story'.
+
+
+Claim H: Yes, with a floor count of 45, 200 Public Square is located in Cleveland in the United States.
+Evidence set: [['200_Public_Square', 'location', 'Cleveland'], ['200_Public_Square', 'floorCount', '"45"'], ['Cleveland', 'country', 'United_States']] 
+Answer: True, everything of the claim is supported by the evidence set.
+
+
+Claim I: Bananaman the TV series starred by a person was shown on the company and the company headquarters is called Broadcasting House.
+Evidence set: [['Bananaman', 'starring', 'Bill_Oddie'], ['Bananaman', 'network', 'Broadcasting_House'], ['Bananaman', 'locationCity', 'Broadcasting_House']] 
+Answer: True, everything of the claim is supported by the evidence set.
+
+
+Claim J: The place, designed by Huseyin Butuner and Hilmi Guner, is located in a country, where the leader is Artur Rasizade.
+Evidence set: [['Azerbaijan', 'leaderName', 'Artur_Rasizade'], ["Baku_Turkish_Martyrs'_Memorial", 'designer', '"Hüseyin Bütüner and Hilmi Güner"'], ["Baku_Turkish_Martyrs'_Memorial", 'location', 'Azerbaijan']] 
+Answer: True, everything of the claim is supported by the evidence set.
+
+
+Claim K: AIDA Cruise line operated the ship which was built by Meyer Werft in Townsend, Poulshot, Wiltshire.
+Evidence set: [['AIDAstella', 'shipBuilder', 'Meyer_Werft'], ['AIDAstella', 'shipOperator', 'AIDA_Cruises']] 
+Answer: False, there is no evidence for Townsend, Poulshot, Wiltshire.
+
+
+Claim L: An academic journal with code IJPHDE is also Acta Math. Hungar.
+Evidence set: [[]] 
+Answer: False, there is no evidence that the academic journal is also Acta Math. Hungar.
+
+
+Now let's verify the Claim based on the Evidence set.
+Claim: <<<<CLAIM>>>>
+Evidence set: <<<<EVIDENCE_SET>>>>
+Answer: 

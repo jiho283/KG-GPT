@@ -1,0 +1,68 @@
+I will give you a set of words. 
+Find the top <<<<TOP_K>>>> elements from Words set which are most semantically related to the given sentence. You may select up to <<<<TOP_K>>>> words. If there is nothing that looks semantically related, pick out any <<<<TOP_K>>>> elements and give them to me.
+
+Examples)
+Sentence A: Ahmad Kadhim Assad's club is Al-Zawra'a SC.
+Words set: ['club', 'clubs', 'parent', 'spouse', 'birthPlace', 'deathYear', 'leaderName', 'awards', 'award', 'vicepresident', 'vicePresident'] 
+Top 2 Answer: ['club', 'clubs']
+
+
+Sentence B: Yeah! I know that Bananaman, which starred Tim Brooke-Taylor, first aired on 3rd October 1983!
+Words set: ['OwningCompany', 'owner', 'dean', 'coach', 'writer', 'firstAired', 'director', 'formerTeam', 'starring'] 
+Top 2 Answer: ['firstAired', 'starring'] 
+
+
+Sentence C: 'A film' was produced by Anatole de Grunwald, directed by Harold French, with cinematography done by Bernard Knowles.
+Words set: ['composer', 'team', 'editor', 'starring', 'runtime', 'director', 'discoverer', 'founder', 'crewMembers', 'writer', 'producer', 'cinematography'] 
+Top 3 Answer: ['producer', 'director', 'cinematography']
+
+
+Sentence D: Really? Jamie Lawrence is the music composer of the 83 minute 'Death on a Factory Farm' film, directed by Sarah Teale!
+Words set: ['composer', 'team', 'editor', 'starring', 'runtime', 'director', 'discoverer', 'founder', 'crewMembers', 'writer'] 
+Top 4 Answer: ['composer', 'runtime', 'director', 'writer']
+
+
+Sentence E: No, but the leader of the United States is not Olena Serdiuk.
+Words set: ['composer', 'team', 'editor', 'starring', 'runtime', 'director', 'discoverer', 'founder', 'leader', 'crewMembers', 'writer', 'producer', 'cinematography'] 
+Top 1 Answer: ['leader']
+
+
+Sentence F: Brandon Carter was born in England and graduated from the University of Cambridge where the current Chancellor is Leszek Borysiewicz.
+Words set: ['OwningCompany', 'placeOfBirth', 'owner', 'viceChancellor', 'almaMater', 'dean', 'coach', 'writer', 'firstAired', 'director', 'formerTeam', 'starring', 'birthPlace'] 
+Top 4 Answer: ['birthPlace', 'placeOfBirth', 'viceChancellor', 'almaMater']
+
+
+Sentence G: AIDA Cruise line operated the ship which was built by Meyer Werft in Townsend, Poulshot, Wiltshire.
+Words set: ['location', 'firstAired', 'clubs', 'parent', 'network', 'shipBuilder', 'birthPlace', 'locationCity', 'shipOperator', 'leaderName', 'awards', 'award', 'vicepresident', 'vicePresident'] 
+Top 4 Answer: ['shipBuilder', 'location', 'locationCity', 'shipOperator',]
+
+
+Sentence H: Yes, with a floor count of 45, 200 Public Square is located in Cleveland in the United States.
+Words set: ['producer', 'floorCount', 'country', 'location', 'primeMinister', 'parent', 'spouse', 'nativeName', 'builder', 'manager', 'designer'] 
+Top 3 Answer: ['floorCount', 'country', 'location']
+
+
+Sentence I: Bananaman the TV series starred by a person was shown on the company and the company headquarters is called Broadcasting House.
+Words set: ['composer', 'team', 'editor', 'starring', 'locationCity', 'runtime', 'network', 'discoverer', 'founder', 'crewMembers', 'writer'] 
+Top 3 Answer: ['locationCity', 'starring','network']
+
+
+Sentence J: Do you know Milan Hodža? he had a religion.
+Words set: ['deathYear', 'leaderName', 'awards', 'award', 'religion'] 
+Top 1 Answer: ['religion']
+
+
+Sentence K: The place, designed by Huseyin Butuner and Hilmi Guner, is located in a country, where the leader is Artur Rasizade.
+Words set: ['producer', 'primeMinister', 'parent', 'leaderName' 'spouse', 'nativeName', 'builder', 'manager', 'designer', 'location'] 
+Top 3 Answer: ['designer', 'leaderName', 'location']
+
+
+Sentence L: An academic journal with code IJPHDE is also Acta Math. Hungar.
+Words set: ['abbreviation', 'placeOfBirth', 'owner', 'coden', 'almaMater', 'dean', 'coach', 'writer', 'firstAired', 'director', 'formerTeam', 'starring', 'birthPlace'] 
+Top 2 Answer: ['abbreviation', 'coden']
+
+
+Now let's find the top <<<<TOP_K>>>> elements.
+Sentence: <<<<SENTENCE>>>>
+Words set: <<<<RELATION_SET>>>>
+Top <<<<TOP_K>>>> Answer: 

@@ -1,0 +1,104 @@
+Please divide the given sentence into several sentences each of which can be represented by one triplet. The generated sentences should be numbered and formatted as follows: #(number). (sentence), (entity set). 
+
+Examples) 
+
+Sentence A: when did the movies starred by [The Night Porter] actors release?
+Entity set: ['The Night Porter'] 
+--> Divided: 
+1. when did the movies release, Entity set: []
+2. movies starred by, Entity set: []
+3. [The Night Porter] actors, Entity set: ['The Night Porter']
+
+
+Sentence B: what types are the movies directed by the director of [Oklahoma Crude]?
+Entity set: ['Oklahoma Crude'] 
+--> Divided: 
+1. what types are the movies, Entity set: []
+2. movies directed by, Entity set: []
+3. the director of [Oklahoma Crude], Entity set: ['Oklahoma Crude']
+
+
+Sentence C: the films written by the screenwriter of [To Catch a Thief] were directed by who?
+Entity set: ['To Catch a Thief'] 
+--> Divided: 
+1. the films written by, Entity set: []
+2. the screenwriter of [To Catch a Thief], Entity set: ['To Catch a Thief']
+3. were directed by who, Entity set: []
+
+
+Sentence D: what are the languages spoken in the movies written by [The Beekeeper] writers?
+Entity set: ['The Beekeeper'] 
+--> Divided: 
+1. what are the languages spoken in the movies, Entity set: []
+2. the movies written by, Entity set: []
+3. [The Beekeeper] writers, Entity set: ['The Beekeeper']
+
+
+Sentence E: what genres do the movies that share actors with [Man of Steel] fall under?
+Entity set: ['Man of Steel'] 
+--> Divided: 
+1. what genres do the movies, Entity set: []
+2. the movies that share actors with, Entity set: []
+3. actors with [Man of Steel], Entity set: ['Man of Steel']
+
+
+Sentence F: the films written by the writer of [French Kiss] starred who?
+Entity set: ['French Kiss'] 
+--> Divided: 
+1. the films written by, Entity set: []
+2. the writer of [French Kiss], Entity set: ['French Kiss']
+3. starred who, Entity set: []
+
+
+Sentence G: who directed movies for the writer of [King Kelly]?
+Entity set: ['King Kelly'] 
+--> Divided: 
+1. who directed movies, Entity set: []
+2. movies for the writer, Entity set: []
+3. writer of [King Kelly], Entity set: ['King Kelly']
+
+
+Sentence H: the films that share actors with the film [Santa Who?] were released in which years?
+Entity set: ['Santa Who?'] 
+--> Divided: 
+1. the films that share actors, Entity set: []
+2. actors with the film [Santa Who?], Entity set: ['Santa Who?']
+3. were released in which years, Entity set: []
+
+
+Sentence I: what were the release dates of movies starred by actors in [Charlie Chan at Monte Carlo]?
+Entity set: ['Charlie Chan at Monte Carlo'] 
+--> Divided: 
+1. what were the release dates of movies, Entity set: []
+2. movies starred by, Entity set: []
+3. actors in [Charlie Chan at Monte Carlo], Entity set: ['Charlie Chan at Monte Carlo']
+
+
+Sentence J: who is listed as screenwriter of the films directed by the [Blue Collar] director?
+Entity set: ['Blue Collar'] 
+--> Divided: 
+1. who is listed as screenwriter of the films, Entity set: []
+2. films directed by, Entity set: []
+3. the [Blue Collar] director, Entity set: ['Blue Collar']
+
+
+Sentence K: who are the writers that the directors of their films also directed [Agatha]?
+Entity set: ['Agatha'] 
+--> Divided: 
+1. who are the writers that, Entity set: [] 
+2. that the directors of their films, Entity set: [] 
+3. their films also directed [Agatha]?, Entity set: ['Agatha'] 
+
+
+Sentence L: what are the languages spoken in the films whose actors also appear in [Pascali's Island]?
+Entity set: ["Pascali's Island"] 
+--> Divided: 
+1. what are the languages spoken in the films, Entity set: []
+2. films whose actors, Entity set: []
+3. actors also appear in [Pascali's Island], Entity set: ["Pascali's Island"]
+
+
+Your Task)
+Sentence:  <<<<CLAIM>>>>
+Entity set: <<<<ENTITY_SET>>>>
+--> Divided:
