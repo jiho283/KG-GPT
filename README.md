@@ -1,8 +1,11 @@
 # KG-GPT
+We propose KG-GPT, a multi-purpose framework leveraging LLMs for tasks employing KGs. KG-GPT comprises three steps: Sentence Segmentation, Graph Retrieval, and Inference, each aimed at partitioning sentences, retrieving relevant graph components, and deriving logical conclusions, respectively. We evaluate KG-GPT using KG-based fact verification and KGQA benchmarks, with the model showing competitive and robust performance, even outperforming several fully-supervised models. Our work, therefore, marks a significant step in unifying structured and unstructured data processing within the realm of LLMs.
 
-You can download the FactKG [here](https://github.com/jiho283/FactKG) and the MetaQA [here](https://github.com/yuyuz/MetaQA).
+The code is released along with our [paper](https://arxiv.org/abs/2310.11220) (EMNLP 2023 Findings). For further details, please refer to our paper.
 
-## OpenAI API key
+You can download FactKG from [this link](https://github.com/jiho283/FactKG) and MetaQA from [this link](https://github.com/yuyuz/MetaQA).
+
+## Before starting: Enter OpenAI API key
 Write your own OpenAI API key in ```factkg/openai_api_key.txt``` and ```metaqa/openai_api_key.txt``` and save them.
 
 ## 1. FactKG
