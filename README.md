@@ -1,4 +1,4 @@
-# KG-GPT
+# KG-GPT: A General Framework for Reasoning on Knowledge Graphs Using Large Language Models
 We propose KG-GPT, a multi-purpose framework leveraging LLMs for tasks employing KGs. KG-GPT comprises three steps: Sentence Segmentation, Graph Retrieval, and Inference, each aimed at partitioning sentences, retrieving relevant graph components, and deriving logical conclusions, respectively. We evaluate KG-GPT using KG-based fact verification and KGQA benchmarks, with the model showing competitive and robust performance, even outperforming several fully-supervised models. Our work, therefore, marks a significant step in unifying structured and unstructured data processing within the realm of LLMs.
 
 The code is released along with our [paper](https://arxiv.org/abs/2310.11220) (EMNLP 2023 Findings). For further details, please refer to our paper.
